@@ -7,11 +7,17 @@
            sync-j="4"
            revision="refs/heads/vic" />
 
-  <remote  name="evo-devices"
-           fetch="https://github.com/Evolution-X-Devices"
+    <remote  name="krast"
+           fetch="https://github.com"
            sync-c="true"
            sync-j="4"
            revision="refs/heads/vic" />
+
+  <!--<remote  name="evo-devices"
+           fetch="https://github.com/Evolution-X-Devices"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/vic" />-->
 
   <remote  name="evo-bitbucket"
            fetch="https://bitbucket.org/evo-x"
@@ -106,8 +112,8 @@
 
   <!-- Infrastructure -->
   <project path="evolution/manifest" name="manifest" remote="evo" />
-  <project path="evolution/OTA" name="OTA" remote="evo" />
-  <project path="evolution/OTA-VANILLA" name="OTA" revision="vic-vanilla" remote="evo" />
+  <project path="evolution/OTA" name="Krastinator/OTA" remote="krast" />
+  <project path="evolution/OTA-VANILLA" name="Krastinator/OTA" revision="vic-vanilla" remote="krast" />
   <project path="evolution/www" name="www" revision="main" remote="evo" />
   <project path="evolution/www/gitres" name="www_gitres" revision="main" remote="evo" />
   <project path="evolution/XDA" name="XDA" remote="evo" />
@@ -127,7 +133,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="evo" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="evo" />
   <project path="packages/apps/SystemUIFlagFlipper" name="packages_apps_SystemUIFlagFlipper" remote="evo" />
-  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="evo"/>
+  <project path="packages/apps/Updater" name="Krastinator/packages_apps_Updater" remote="krast"/>
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk" remote="evo" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="evo" />
   <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" groups="pdk-cw-fs,pdk-fs" remote="evo" />
